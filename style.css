@@ -1,0 +1,41 @@
+/* Full page styling */
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* Colorful gradient background */
+    background: linear-gradient(135deg, #667eea, #764ba2, #f7971e);
+    background-size: 300% 300%;
+    animation: gradientMove 6s ease infinite;
+
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Gradient animation */
+@keyframes gradientMove {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Heading style */
+h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Paragraph style */
+p {
+    color: #f1f1f1;
+    font-size: 1.3rem;
+    background: rgba(255, 255, 255, 0.15);
+    padding: 10px 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
